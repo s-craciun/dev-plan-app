@@ -18,7 +18,7 @@ const compat = new FlatCompat({
 });
 
 export default tseslint.config(
-  { ignores: ['node_modules, dist'] },
+  { ignores: ['node_modules', 'dist'] },
   {
     extends: [
       js.configs.recommended,
@@ -27,7 +27,7 @@ export default tseslint.config(
       ...tseslint.configs.recommended,
       ...compat.extends('prettier'),
     ],
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    files: ['**/*.{js,mjs,cjs,mts,ts,jsx,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
@@ -52,8 +52,6 @@ export default tseslint.config(
       '@typescript-eslint/no-unused-vars': 'warn',
       'lines-between-class-members': ['error', 'always'],
       'import/no-extraneous-dependencies': 'off',
-      'no-console': 'warn',
-      'no-debugger': 'warn',
       'comma-dangle': ['off', 'never'],
       'no-underscore-dangle': 'off',
       semi: ['warn', 'always'],
