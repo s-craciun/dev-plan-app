@@ -1,20 +1,21 @@
-import { useState } from 'react';
-import { ReactIcon, ViteIcon } from './assets/index.mts';
-// import './App.css';
+import { useState } from 'react'
+import { ReactComponent as React } from './assets/react.svg'
+import { ReactComponent as Vite } from './assets/vite.svg'
+import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0)
 
   return (
     <>
       <div>
-        <a href="https://vite.dev" target="_blank" rel="noreferrer">
+        <a href="https://vite.dev" target="_blank">
           {/* <img src={viteLogo} className="logo" alt="Vite logo" /> */}
-          <ViteIcon className="logo" />
+          <Vite className='logo' />
         </a>
-        <a href="https://react.dev" target="_blank" rel="noreferrer">
+        <a href="https://react.dev" target="_blank">
           {/* <img src={reactLogo} className="logo react" alt="React logo" /> */}
-          <ReactIcon className="logo" />
+          <React className='logo' />
         </a>
       </div>
       <h1>Vite + React</h1>
@@ -30,7 +31,7 @@ function App() {
         Click on the Vite and React logos to learn more
       </p>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
