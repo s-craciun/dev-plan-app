@@ -8,12 +8,7 @@ export default defineConfig({
     react(),
     svgr({
       svgrOptions: {
-        exportType: 'named',
-        expandProps: 'start',
-        svgProps: {
-          className:
-            "{props.className ? props.className + ' svgr-icon' : 'svgr-icon'}",
-        },
+        exportType: 'default',
       },
       include: '**/*.svg',
     }),

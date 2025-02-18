@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import { ReactComponent as React } from './assets/react.svg'
-import { ReactComponent as Vite } from './assets/vite.svg'
+import { Vite, React } from './assets/index.ts'
 import './App.css'
 
 function App() {
