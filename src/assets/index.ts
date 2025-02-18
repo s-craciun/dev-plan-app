@@ -1,5 +1,4 @@
-/* eslint-disable import/no-unresolved */
-import Vite from './vite.svg?import';
-import React from './react.svg?import';
+import Vite from './vite.svg';
+import React from './react.svg';
 
 export { Vite, React };
